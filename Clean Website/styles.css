@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Color Palette */
+
+/* #24305E - DkBlue
+  #374785 - Blue  
+  #A8D0E6 - LtBlue
+  #F76C6C- Lettering */
+  
+h1 {
+  color: #24305E;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+h2, p {
+  color:#374785;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 1.7rem;
+}
+
+h3 {
+  color: #24305E;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.user h3 {
+  font-size: 1.5rem;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: linear-gradient(to right bottom, #24305E, #374785, #A8D0E6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  height: 85vh;
+  width: 60%;
+  background: linear-gradient(
+  to right bottom,
+  rgba(255, 255, 255, 0.7),
+  rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 1rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+  to right bottom,
+  rgba(255, 255, 255, 0.7),
+  rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 1rem;
+}
+.user img {
+  border-radius: 50%;
+  height: 70%;
+  width: auto;
+}
+
+.link {
+  display: flex;
+  margin: 1rem 0rem;
+  padding: 1rem 3rem;
+  align-items: center;
+}
+.link h2 {
+  padding: 0rem 2rem;
+}
+
+.link i {
+  text-align: center;
+}
+
+i {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(to right bottom,  #24305E, #374785);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.books {
+  flex: 2;
+}
+
+.pro {
+  background: linear-gradient(to right bottom,  #24305E, #374785);
+  border-radius: 1rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+.pro h2 {
+  color: white;
+  font-weight: 600;
+}
+
+/* BOOKS */
+.status {
+  margin-bottom: 1rem;
+}
+
+.status input {
+  background: linear-gradient(
+  to right bottom,
+  rgba(255, 255, 255, 0.7),
+  rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  width: 60%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.status input:focus {
+  outline:none;
+}
+
+.books {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: grid;
+  background: linear-gradient(
+  to left top,
+  rgba(255, 255, 255, 0.8),
+  rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 1rem 0rem;
+  padding: 0.5rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  grid-template-columns: 5fr 1fr;
+  gap:0;
+  height: 7rem;
+  justify-content: center;
+  grid-template-areas: 
+    "info percentage"
+}
+
+.progress {
+  background: linear-gradient(to right,  #24305E, #374785, #A8D0E6);
+  width: 100%;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.b1::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(220, 220, 220, 0.7);
+  position: absolute;
+  left: 90%;
+}
+
+.b2::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(220, 220, 220, 0.7);
+  position: absolute;
+  left: 50%;
+}
+
+.b3::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(220, 220, 220, 0.7);
+  position: absolute;
+  left: 80%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-area:info;
+}
+
+.percentage {
+  font-weight: bold;
+  background: linear-gradient(to right bottom,  #24305E, #374785);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  grid-area: percentage;
+}
